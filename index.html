@@ -4,213 +4,262 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>茶々holiday特別企画 | ChaCha Japan</title>
-    <meta name="description" content="YouTube「ChaCha Japan」がお届けする、日本茶と癒しの特別企画「茶々holiday」。忙しい日々に余白を作る、大人のための休日イベント。">
+    <title>身だしなみを整える日 制定記念セレモニー & 細野貴史講演会 | 2026.3.10</title>
+    <meta name="description" content="2026年3月10日（火）、「身だしなみを整える日」制定を記念して、名古屋にて細野貴史氏の記念イベント（講演会）を開催します。">
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500&family=Zen+Old+Mincho:wght@400;500;600;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
     <!-- Header -->
-    <header class="header">
-        <div class="header__logo">ChaCha Japan</div>
-        <nav class="header__nav">
-            <a href="#details" class="btn btn--small">参加申し込み</a>
-        </nav>
+    <header class="site-header">
+        <div class="container">
+            <h1 class="logo">MIDASHINAMI PROJECT</h1>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#speaker">Speaker</a></li>
+                    <li><a href="#details">Details</a></li>
+                    <li><a href="https://mitameborasuta.peatix.com" target="_blank"
+                            class="btn btn-primary small">チケット購入</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero__bg">
-            <!-- Image will be placed here via CSS or img tag later -->
-            <div class="hero__overlay"></div>
-        </div>
-        <div class="hero__content">
-            <p class="hero__subtitle fade-in">YouTube「ChaCha Japan」特別企画</p>
-            <h1 class="hero__title fade-in delay-1">
-                <span class="tategaki">忙しい日々に、</span><br class="sp-only">
-                <span class="tategaki">一杯の「余白」を。</span>
-            </h1>
-            <p class="hero__desc fade-in delay-2">
-                心ほどける、大人の休日。<br>
-                日本茶と癒しの体験イベント<br>
-                「茶々holiday」開催決定。
+    <section id="hero" class="hero-section">
+        <div class="container hero-content">
+            <p class="hero-subtitle fade-in">2026年3月10日(火) 開催</p>
+            <h2 class="hero-title fade-in delay-1">細野貴史講演会</h2>
+            <h3 class="hero-ceremony-title fade-in delay-2">身だしなみを整える日<br>制定記念セレモニー</h3>
+            <div class="hero-divider fade-in delay-3"></div>
+            <p class="hero-quote fade-in delay-3">“第一印象はセンスではなく、<br class="mobile-break">技術で整えられる。”</p>
+            <p class="hero-text fade-in delay-4">
+                仕事でもプライベートでも、<br>
+                最初の数秒で信頼や空気が決まる——<br>
+                その再現性を、細野さんの視点と言語化で学べる夜。
             </p>
-            <div class="hero__cta fade-in delay-3">
-                <a href="#details" class="btn btn--primary">特別企画に申し込む</a>
-                <p class="hero__note">※先着順・定員あり</p>
-            </div>
+            <a href="https://mitameborasuta.peatix.com" target="_blank"
+                class="btn btn-gold fade-in delay-5">チケットを申し込む</a>
         </div>
+        <div class="hero-background"></div>
     </section>
 
-    <!-- Empathy / Problem Section -->
-    <section class="section empathy">
-        <div class="container container--narrow">
-            <h2 class="section__title fade-up">
-                毎日、誰かのために<br>
-                頑張りすぎていませんか？
-            </h2>
-            <div class="empathy__text fade-up">
-                <p>仕事、家事、人間関係……。<br>
-                    気がつけば、自分のことは後回しになっていませんか？</p>
-                <p>「ゆっくりお茶を飲む時間すらない」<br>
-                    「最近、心からリラックスできていない」</p>
-                <p>そんなふうに感じているあなたへ。<br>
-                    たまには時計を外して、<br>
-                    <strong>自分自身をいたわる時間</strong>を過ごしませんか？
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Solution / Concept Section -->
-    <section class="section solution">
+    <!-- About Section -->
+    <section id="about" class="about-section section-padding">
         <div class="container">
-            <div class="solution__inner">
-                <div class="solution__image fade-up">
-                    <!-- Image placeholder -->
-                    <div class="img-box" id="img-solution"></div>
-                </div>
-                <div class="solution__content fade-up">
-                    <h2 class="section__title section__title--left">
-                        五感で味わう、<br>
-                        極上のリラックス体験。
-                    </h2>
-                    <p class="text-body">
-                        ただお茶を飲むだけではありません。<br>
-                        それは、流れる時間そのものを味わう体験。
+            <div class="section-header text-center">
+                <span class="section-subtitle">Concept</span>
+                <h3 class="section-title">身だしなみを整える日とは</h3>
+            </div>
+            <div class="about-content">
+                <div class="about-card">
+                    <p class="about-lead">
+                        「身だしなみを整える日」は<br>
+                        3/10（み＝3、だしなみを＝、ととのえる＝10 の語呂）という由来もあり、<br>
+                        節目の季節に“整える”意識を高める日として紹介されています。
                     </p>
-                    <p class="text-body">
-                        厳選された日本茶の香り、<br>
-                        心安らぐ空間、<br>
-                        そして、同じ価値観を持つ仲間との穏やかな会話。
-                    </p>
-                    <p class="text-body">
-                        張り詰めていた心がふっと軽くなる、<br>
-                        そんな特別な1日をご用意しました。
+                    <p class="about-desc">
+                        この記念すべき日に、<br>
+                        【魔法の第一印象〜会った瞬間に心をつかむ技術〜】の著者<br>
+                        細野貴史氏をお招きし、特別講演会を開催いたします。
                     </p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Features Section -->
-    <section class="section features">
+    <!-- Speaker Section -->
+    <section id="speaker" class="speaker-section section-padding">
         <div class="container">
-            <h2 class="section__title fade-up">茶々holiday<br><span class="text-sm">3つの楽しみ</span></h2>
-
-            <div class="feature-list">
-                <!-- Feature 1 -->
-                <div class="feature-item fade-up">
-                    <div class="feature-item__img" id="img-feature-1"></div>
-                    <div class="feature-item__content">
-                        <h3 class="feature-item__title">01. ChaCha厳選<br>「最高級日本茶」飲み比べ</h3>
-                        <p class="feature-item__desc">
-                            普段はなかなか出会えない希少な茶葉をご用意しました。プロが淹れる至高の一杯で、香りに包まれながら、体の内側から浄化されるような体験をお届けします。
-                        </p>
-                    </div>
+            <div class="speaker-layout">
+                <div class="speaker-image-wrapper">
+                    <img src="images/hosono.jpg" alt="細野 貴史" class="speaker-image">
                 </div>
-
-                <!-- Feature 2 -->
-                <div class="feature-item feature-item--reverse fade-up">
-                    <div class="feature-item__img" id="img-feature-2"></div>
-                    <div class="feature-item__content">
-                        <h3 class="feature-item__title">02. 心整う<br>「マインドフルネス」な空間</h3>
-                        <p class="feature-item__desc">
-                            日常の喧騒を離れた静かな場所で、心を空っぽにする時間を。お茶の香りに集中する「ティー・メディテーション」など、初心者でも楽しめる癒しのプログラムをご用意。
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Feature 3 -->
-                <div class="feature-item fade-up">
-                    <div class="feature-item__img" id="img-feature-3"></div>
-                    <div class="feature-item__content">
-                        <h3 class="feature-item__title">03. ここでしか聞けない<br>「限定トークショー」</h3>
-                        <p class="feature-item__desc">
-                            YouTubeでは語りきれない裏話や、心豊かに生きるためのヒントを直接お届けします。ChaChaとの交流もお楽しみください。
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Profile Section -->
-    <section class="section profile">
-        <div class="container container--narrow">
-            <div class="profile__box fade-up">
-                <div class="profile__img" id="img-profile"></div>
-                <div class="profile__content">
-                    <h3 class="profile__name">ChaCha <span class="profile__role">/ ChaCha Japan</span></h3>
-                    <p class="profile__text">
-                        日本文化と日本茶の魅力を世界へ発信中。<br>
-                        「お茶を通じて、心豊かなライフスタイルを」をテーマに活動。<br>
-                        YouTube登録者数〇〇万人。
+                <div class="speaker-info">
+                    <span class="speaker-role">Special Guest</span>
+                    <h3 class="speaker-name">細野 貴史<span class="name-en">Takashi Hosono</span></h3>
+                    <p class="speaker-bio">
+                        著書『魔法の第一印象〜会った瞬間に心をつかむ技術〜』。<br>
+                        第一印象を「センス」ではなく「技術」として体系化。<br>
+                        本講演では、最初の数秒で信頼を勝ち取るための具体的なメソッドと、その再現性について語ります。
+                        <br><br>
+                        <small>※講演テーマは書籍内容にも紐づく予定です</small>
                     </p>
-                    <p class="profile__message">
-                        「皆さんにお会いできるのを、心から楽しみにしています。<br>
-                        当日は肩の力を抜いて、ただただ楽しんでくださいね。」
-                    </p>
+                    <div class="speaker-book">
+                        <span class="book-label">著書</span>
+                        <a href="https://amzn.asia/d/0hQ5LBre" target="_blank">
+                            <img src="images/book.jpg" alt="著書：魔法の第一印象" class="book-image">
+                        </a>
+                        <p class="book-promo">全国書店・Amazonにて好評発売中。<br>
+                            <a href="https://amzn.asia/d/0hQ5LBre" target="_blank" class="text-link">ご購入はこちら &rarr;</a>
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Details Section -->
-    <section id="details" class="section details">
-        <div class="container container--narrow">
-            <h2 class="section__title fade-up">開催概要</h2>
-            <div class="details__card fade-up">
-                <dl class="details__list">
-                    <div class="details__item">
-                        <dt>日時</dt>
-                        <dd>202X年〇月〇日（土）<br>13:00〜16:00（開場 12:30）</dd>
+    <section id="details" class="details-section section-padding">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-subtitle">Information</span>
+                <h3 class="section-title">開催概要</h3>
+            </div>
+            <div class="details-grid">
+                <div class="detail-item">
+                    <div class="detail-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                            <line x1="16" y1="2" x2="16" y2="6"></line>
+                            <line x1="8" y1="2" x2="8" y2="6"></line>
+                            <line x1="3" y1="10" x2="21" y2="10"></line>
+                        </svg>
                     </div>
-                    <div class="details__item">
-                        <dt>場所</dt>
-                        <dd>都内某所（古民家カフェ）<br><span class="text-note">※詳細は参加者様のみにお伝えします</span></dd>
+                    <h4>日時</h4>
+                    <p class="detail-main">2026年3月10日(火)</p>
+                    <p class="detail-sub">18:00〜20:00<br>（17:30開場）</p>
+                </div>
+                <div class="detail-item">
+                    <div class="detail-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                            <circle cx="12" cy="10" r="3"></circle>
+                        </svg>
                     </div>
-                    <div class="details__item">
-                        <dt>定員</dt>
-                        <dd>限定 15名様</dd>
-                    </div>
-                    <div class="details__item">
-                        <dt>参加費</dt>
-                        <dd>〇,〇〇〇円（税込）<br><span class="text-note">※厳選日本茶・特製お茶菓子付き</span></dd>
-                    </div>
-                </dl>
+                    <h4>場所</h4>
+                    <p class="detail-main">中日美容専門学校2号館<br>（CSホール）</p>
+                    <p class="detail-sub">名古屋市中村区名駅南４丁目１１−４７</p>
+                    <a href="https://maps.app.goo.gl/ekrFhr8UifEtAQBC6" target="_blank" class="btn-text"
+                        style="margin-top: 15px; display: inline-block;">Googleマップで見る &rarr;</a>
+                </div>
+            </div>
+            <div class="map-container">
+                <!-- Google Maps Embed Placeholder -->
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3261.688647648356!2d136.8856!3d35.1656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600376e70b3b3b3b%3A0x123456789abcdef!2z5Lit5pel576O5a655bCC6ZaA5a2m5qCh!5e0!3m2!1sja!2sjp!4v1600000000000!5m2!1sja!2sjp"
+                    width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
         </div>
     </section>
 
-    <!-- CTA Section -->
-    <section class="section cta">
-        <div class="container container--narrow">
-            <h2 class="cta__title fade-up">この休日が、<br>明日からのあなたの活力になりますように。</h2>
-            <p class="cta__text fade-up">
-                少人数での開催となるため、お席には限りがございます。<br>
-                「行ってみたい」と思われた方は、お早めにお席を確保してください。<br>
-                <br>
-                あなたと、温かいお茶を囲めることを楽しみにしています。
-            </p>
-            <div class="cta__btn-wrapper fade-up">
-                <a href="#" class="btn btn--primary btn--large">茶々holidayに参加する</a>
-                <p class="cta__note">※クリックで申込みフォームへ移動します</p>
+    <!-- Ticket Section -->
+    <section id="tickets" class="ticket-section section-padding">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-subtitle">Tickets</span>
+                <h3 class="section-title">チケット情報</h3>
+                <p class="ticket-note">座席・スポンサー枠をお選びいただけます</p>
+            </div>
+
+            <div class="ticket-grid">
+                <!-- VIP Ticket -->
+                <div class="ticket-card featured">
+                    <div class="ticket-badge">おすすめ</div>
+                    <h4 class="ticket-name">VIP席</h4>
+                    <p class="ticket-desc">特別エリアでの観覧</p>
+                    <div class="ticket-price">¥10,000</div>
+                    <a href="https://mitameborasuta.peatix.com" target="_blank"
+                        class="btn btn-primary full-width">購入する</a>
+                </div>
+
+                <!-- General Ticket -->
+                <div class="ticket-card">
+                    <h4 class="ticket-name">一般席</h4>
+                    <p class="ticket-desc">自由席</p>
+                    <div class="ticket-price">¥3,000</div>
+                    <a href="https://mitameborasuta.peatix.com" target="_blank"
+                        class="btn btn-outline full-width">購入する</a>
+                </div>
+
+                <!-- Flower Sponsor -->
+                <div class="ticket-card">
+                    <h4 class="ticket-name">お花スポンサー</h4>
+                    <p class="ticket-desc">パンフレットに掲載</p>
+                    <div class="ticket-price">¥35,000</div>
+                    <a href="https://mitameborasuta.peatix.com" target="_blank"
+                        class="btn btn-outline full-width">購入する</a>
+                </div>
+
+                <!-- Sponsor Ticket -->
+                <div class="ticket-card">
+                    <h4 class="ticket-name">スポンサー席</h4>
+                    <p class="ticket-desc">パンフレットに掲載</p>
+                    <div class="ticket-price">¥50,000</div>
+                    <a href="https://mitameborasuta.peatix.com" target="_blank"
+                        class="btn btn-outline full-width">購入する</a>
+                </div>
+
+                <!-- Other Tickets -->
+                <div class="ticket-card invitation">
+                    <h4 class="ticket-name">招待枠</h4>
+                    <ul class="invitation-list">
+                        <li>美容関係者招待枠</li>
+                        <li>学生招待枠</li>
+                    </ul>
+                    <a href="https://mitameborasuta.peatix.com" target="_blank" class="btn btn-text full-width">詳細を見る
+                        &rarr;</a>
+                </div>
             </div>
         </div>
     </section>
 
-    <footer class="footer">
-        <p class="copyright">&copy; ChaCha Japan All Rights Reserved.</p>
+    <!-- Volunteer Section -->
+    <section id="volunteer" class="volunteer-section section-padding">
+        <div class="container text-center">
+            <h3 class="section-title">Volunteer Staff</h3>
+            <div class="volunteer-box">
+                <h4 class="volunteer-heading">講演会を一緒に創る仲間を募集中！</h4>
+                <p class="volunteer-text">ボランティアスタッフをご希望の方はこちらから</p>
+                <a href="https://mitameborasuta.peatix.com" target="_blank" class="btn btn-primary">ボランティアスタッフに応募する</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Organizer Section -->
+    <section id="organizer" class="organizer-section section-padding">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-subtitle">Organizer</span>
+                <h3 class="section-title">主催</h3>
+            </div>
+            <div class="organizer-profile text-center">
+                <h4 class="organizer-name">佐野 翔平 <span class="organizer-role">Shohei Sano</span></h4>
+                <p class="organizer-pos">伝統屋 暁／粋響株式会社 代表取締役</p>
+                <ul class="organizer-achievements">
+                    <li>火縄銃 競技 全日本優勝</li>
+                    <li>カンヌ・ミラノ出展ジュエリーデザイナー</li>
+                </ul>
+                <div class="organizer-link-wrapper">
+                    <a href="https://www.dentoyaakatsuki.com/" target="_blank" rel="noopener noreferrer"
+                        class="organizer-link">https://www.dentoyaakatsuki.com/</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container text-center">
+            <p class="footer-logo">MIDASHINAMI PROJECT 2026</p>
+            <div class="footer-links">
+                <a href="privacy.html">プライバシーポリシー</a>
+                <a href="tokusho.html">特定商取引法に基づく表記</a>
+            </div>
+            <p class="copyright">&copy; 2026 Midashinami Project. All Rights Reserved.</p>
+        </div>
     </footer>
 
-    <script src="js/main.js"></script>
 </body>
 
 </html>
