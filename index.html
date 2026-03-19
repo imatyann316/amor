@@ -4,262 +4,168 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>身だしなみを整える日 制定記念セレモニー & 細野貴史講演会 | 2026.3.10</title>
-    <meta name="description" content="2026年3月10日（火）、「身だしなみを整える日」制定を記念して、名古屋にて細野貴史氏の記念イベント（講演会）を開催します。">
-    <!-- Google Fonts -->
+    <title>株式会社Amor - 美容・教育・コンサルティング</title>
+    <meta name="description" content="株式会社Amorは、名古屋を拠点に美容産業、教育、ビジネスコンサルティングを展開する企業です。">
+
+    <!-- Google Fonts for Mincho -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;700;800&family=Cinzel:wght@600;800&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <!-- Background Canvas for Embers/Dungeon Effect -->
+    <canvas id="emberCanvas"></canvas>
 
-    <!-- Header -->
-    <header class="site-header">
-        <div class="container">
-            <h1 class="logo">MIDASHINAMI PROJECT</h1>
-            <nav class="main-nav">
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#speaker">Speaker</a></li>
-                    <li><a href="#details">Details</a></li>
-                    <li><a href="https://mitameborasuta.peatix.com" target="_blank"
-                            class="btn btn-primary small">チケット購入</a></li>
-                </ul>
-            </nav>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <h1 class="nav-logo">Amor</h1>
+            <ul class="nav-links">
+                <li><a href="#about">会社概要</a></li>
+                <li><a href="#services">事業内容</a></li>
+                <li><a href="#alliance">提携機構</a></li>
+                <li><a href="#contact">お問い合わせ</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content fade-in">
+            <h2 class="hero-subtitle">美とビジネスの深淵を拓く</h2>
+            <h1 class="hero-title">株式会社Amor</h1>
+            <p class="hero-desc">美容産業から教育、コンサルティングまで、<br>あなたのビジネスを次の次元へと導く。</p>
+            <a href="#services" class="cta-button">深層へ進む</a>
+        </div>
+        <div class="scroll-indicator">
+            <p>Scroll</p>
+            <div class="arrow"></div>
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section id="hero" class="hero-section">
-        <div class="container hero-content">
-            <p class="hero-subtitle fade-in">2026年3月10日(火) 開催</p>
-            <h2 class="hero-title fade-in delay-1">細野貴史講演会</h2>
-            <h3 class="hero-ceremony-title fade-in delay-2">身だしなみを整える日<br>制定記念セレモニー</h3>
-            <div class="hero-divider fade-in delay-3"></div>
-            <p class="hero-quote fade-in delay-3">“第一印象はセンスではなく、<br class="mobile-break">技術で整えられる。”</p>
-            <p class="hero-text fade-in delay-4">
-                仕事でもプライベートでも、<br>
-                最初の数秒で信頼や空気が決まる——<br>
-                その再現性を、細野さんの視点と言語化で学べる夜。
-            </p>
-            <a href="https://mitameborasuta.peatix.com" target="_blank"
-                class="btn btn-gold fade-in delay-5">チケットを申し込む</a>
+    <!-- Services Section -->
+    <section id="services" class="section">
+        <div class="container fade-in">
+            <h2 class="section-title" data-en="Services">事業内容</h2>
+            <div class="services-grid">
+                <!-- Service 1 -->
+                <div class="service-card">
+                    <div class="card-icon">✧</div>
+                    <h3 class="card-title">美容産業</h3>
+                    <p class="card-desc">最新の美容トレンドを取り入れた高品質なサービスと商材の提供。<br>美の探求を通じ、人々の輝きを引き出します。</p>
+                </div>
+                <!-- Service 2 -->
+                <div class="service-card">
+                    <div class="card-icon">✦</div>
+                    <h3 class="card-title">教育事業</h3>
+                    <p class="card-desc">美容業界で活躍するプロフェッショナルの育成。<br>確かな技術とホスピタリティを備えた人材を世に送り出します。</p>
+                </div>
+                <!-- Service 3 -->
+                <div class="service-card">
+                    <div class="card-icon">⟡</div>
+                    <h3 class="card-title">ビジネス・コンサルティング</h3>
+                    <p class="card-desc">サロン経営者や新規開業者への経営支援。<br>実績に基づいた戦略で、迷宮のようなビジネス課題を打破します。</p>
+                </div>
+            </div>
         </div>
-        <div class="hero-background"></div>
+    </section>
+
+    <!-- Alliance Section -->
+    <section id="alliance" class="section alliance-section">
+        <div class="container fade-in">
+            <h2 class="section-title" data-en="Alliance">提携機構</h2>
+            <div class="alliance-content glass-panel">
+                <h3 class="alliance-name">株式会社ビーズ (B's group)</h3>
+                <p class="alliance-desc">
+                    愛知県を中心に多世代向けコンセプトサロン（B's sparkle, B's amor, B's age）など幅広い美容室・サロンを展開する株式会社ビーズ様と深く連携。<br>
+                    現場のリアルな知見とノウハウを共有し、実践的な教育とコンサルティングを実現しています。
+                </p>
+                <div class="tech-lines"></div>
+            </div>
+        </div>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="about-section section-padding">
-        <div class="container">
-            <div class="section-header text-center">
-                <span class="section-subtitle">Concept</span>
-                <h3 class="section-title">身だしなみを整える日とは</h3>
-            </div>
-            <div class="about-content">
-                <div class="about-card">
-                    <p class="about-lead">
-                        「身だしなみを整える日」は<br>
-                        3/10（み＝3、だしなみを＝、ととのえる＝10 の語呂）という由来もあり、<br>
-                        節目の季節に“整える”意識を高める日として紹介されています。
-                    </p>
-                    <p class="about-desc">
-                        この記念すべき日に、<br>
-                        【魔法の第一印象〜会った瞬間に心をつかむ技術〜】の著者<br>
-                        細野貴史氏をお招きし、特別講演会を開催いたします。
-                    </p>
+    <section id="about" class="section">
+        <div class="container fade-in">
+            <h2 class="section-title" data-en="Company Profile">会社概要</h2>
+            <div class="about-grid">
+                <div class="about-info glass-panel">
+                    <dl class="info-list">
+                        <div class="info-item">
+                            <dt>会社名</dt>
+                            <dd>株式会社Amor (Amor Co., Ltd.)</dd>
+                        </div>
+                        <div class="info-item">
+                            <dt>代表者</dt>
+                            <dd>細野 貴史</dd>
+                        </div>
+                        <div class="info-item">
+                            <dt>設立</dt>
+                            <dd>令和3年（2021年）4月13日</dd>
+                        </div>
+                        <div class="info-item">
+                            <dt>所在地</dt>
+                            <dd>〒463-0037<br>愛知県名古屋市守山区天子田1丁目1201番地の15</dd>
+                        </div>
+                        <div class="info-item">
+                            <dt>電話番号</dt>
+                            <dd>080-5151-1256</dd>
+                        </div>
+                        <div class="info-item">
+                            <dt>事業内容</dt>
+                            <dd>美容産業、教育事業、ビジネスコンサルティング</dd>
+                        </div>
+                        <div class="info-item">
+                            <dt>資本金</dt>
+                            <dd>300万円</dd>
+                        </div>
+                    </dl>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Speaker Section -->
-    <section id="speaker" class="speaker-section section-padding">
-        <div class="container">
-            <div class="speaker-layout">
-                <div class="speaker-image-wrapper">
-                    <img src="images/hosono.jpg" alt="細野 貴史" class="speaker-image">
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container fade-in">
+            <h2 class="section-title" data-en="Contact">お問い合わせ</h2>
+            <div class="contact-panel glass-panel">
+                <p class="contact-message">事業に関するご相談、コンサルティングのご依頼など、<br>お気軽にお問い合わせください。</p>
+                <div class="contact-email">
+                    <span class="email-icon">✉</span>
+                    <a href="mailto:takashi.h.project@gmail.com?subject=株式会社Amorへのお問い合わせ"
+                        class="email-link">takashi.h.project@gmail.com</a>
                 </div>
-                <div class="speaker-info">
-                    <span class="speaker-role">Special Guest</span>
-                    <h3 class="speaker-name">細野 貴史<span class="name-en">Takashi Hosono</span></h3>
-                    <p class="speaker-bio">
-                        著書『魔法の第一印象〜会った瞬間に心をつかむ技術〜』。<br>
-                        第一印象を「センス」ではなく「技術」として体系化。<br>
-                        本講演では、最初の数秒で信頼を勝ち取るための具体的なメソッドと、その再現性について語ります。
-                        <br><br>
-                        <small>※講演テーマは書籍内容にも紐づく予定です</small>
-                    </p>
-                    <div class="speaker-book">
-                        <span class="book-label">著書</span>
-                        <a href="https://amzn.asia/d/0hQ5LBre" target="_blank">
-                            <img src="images/book.jpg" alt="著書：魔法の第一印象" class="book-image">
-                        </a>
-                        <p class="book-promo">全国書店・Amazonにて好評発売中。<br>
-                            <a href="https://amzn.asia/d/0hQ5LBre" target="_blank" class="text-link">ご購入はこちら &rarr;</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Details Section -->
-    <section id="details" class="details-section section-padding">
-        <div class="container">
-            <div class="section-header text-center">
-                <span class="section-subtitle">Information</span>
-                <h3 class="section-title">開催概要</h3>
-            </div>
-            <div class="details-grid">
-                <div class="detail-item">
-                    <div class="detail-icon">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
-                            <line x1="16" y1="2" x2="16" y2="6"></line>
-                            <line x1="8" y1="2" x2="8" y2="6"></line>
-                            <line x1="3" y1="10" x2="21" y2="10"></line>
-                        </svg>
-                    </div>
-                    <h4>日時</h4>
-                    <p class="detail-main">2026年3月10日(火)</p>
-                    <p class="detail-sub">18:00〜20:00<br>（17:30開場）</p>
-                </div>
-                <div class="detail-item">
-                    <div class="detail-icon">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-                            <circle cx="12" cy="10" r="3"></circle>
-                        </svg>
-                    </div>
-                    <h4>場所</h4>
-                    <p class="detail-main">中日美容専門学校2号館<br>（CSホール）</p>
-                    <p class="detail-sub">名古屋市中村区名駅南４丁目１１−４７</p>
-                    <a href="https://maps.app.goo.gl/ekrFhr8UifEtAQBC6" target="_blank" class="btn-text"
-                        style="margin-top: 15px; display: inline-block;">Googleマップで見る &rarr;</a>
-                </div>
-            </div>
-            <div class="map-container">
-                <!-- Google Maps Embed Placeholder -->
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3261.688647648356!2d136.8856!3d35.1656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600376e70b3b3b3b%3A0x123456789abcdef!2z5Lit5pel576O5a655bCC6ZaA5a2m5qCh!5e0!3m2!1sja!2sjp!4v1600000000000!5m2!1sja!2sjp"
-                    width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            </div>
-        </div>
-    </section>
-
-    <!-- Ticket Section -->
-    <section id="tickets" class="ticket-section section-padding">
-        <div class="container">
-            <div class="section-header text-center">
-                <span class="section-subtitle">Tickets</span>
-                <h3 class="section-title">チケット情報</h3>
-                <p class="ticket-note">座席・スポンサー枠をお選びいただけます</p>
-            </div>
-
-            <div class="ticket-grid">
-                <!-- VIP Ticket -->
-                <div class="ticket-card featured">
-                    <div class="ticket-badge">おすすめ</div>
-                    <h4 class="ticket-name">VIP席</h4>
-                    <p class="ticket-desc">特別エリアでの観覧</p>
-                    <div class="ticket-price">¥10,000</div>
-                    <a href="https://mitameborasuta.peatix.com" target="_blank"
-                        class="btn btn-primary full-width">購入する</a>
-                </div>
-
-                <!-- General Ticket -->
-                <div class="ticket-card">
-                    <h4 class="ticket-name">一般席</h4>
-                    <p class="ticket-desc">自由席</p>
-                    <div class="ticket-price">¥3,000</div>
-                    <a href="https://mitameborasuta.peatix.com" target="_blank"
-                        class="btn btn-outline full-width">購入する</a>
-                </div>
-
-                <!-- Flower Sponsor -->
-                <div class="ticket-card">
-                    <h4 class="ticket-name">お花スポンサー</h4>
-                    <p class="ticket-desc">パンフレットに掲載</p>
-                    <div class="ticket-price">¥35,000</div>
-                    <a href="https://mitameborasuta.peatix.com" target="_blank"
-                        class="btn btn-outline full-width">購入する</a>
-                </div>
-
-                <!-- Sponsor Ticket -->
-                <div class="ticket-card">
-                    <h4 class="ticket-name">スポンサー席</h4>
-                    <p class="ticket-desc">パンフレットに掲載</p>
-                    <div class="ticket-price">¥50,000</div>
-                    <a href="https://mitameborasuta.peatix.com" target="_blank"
-                        class="btn btn-outline full-width">購入する</a>
-                </div>
-
-                <!-- Other Tickets -->
-                <div class="ticket-card invitation">
-                    <h4 class="ticket-name">招待枠</h4>
-                    <ul class="invitation-list">
-                        <li>美容関係者招待枠</li>
-                        <li>学生招待枠</li>
-                    </ul>
-                    <a href="https://mitameborasuta.peatix.com" target="_blank" class="btn btn-text full-width">詳細を見る
-                        &rarr;</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Volunteer Section -->
-    <section id="volunteer" class="volunteer-section section-padding">
-        <div class="container text-center">
-            <h3 class="section-title">Volunteer Staff</h3>
-            <div class="volunteer-box">
-                <h4 class="volunteer-heading">講演会を一緒に創る仲間を募集中！</h4>
-                <p class="volunteer-text">ボランティアスタッフをご希望の方はこちらから</p>
-                <a href="https://mitameborasuta.peatix.com" target="_blank" class="btn btn-primary">ボランティアスタッフに応募する</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Organizer Section -->
-    <section id="organizer" class="organizer-section section-padding">
-        <div class="container">
-            <div class="section-header text-center">
-                <span class="section-subtitle">Organizer</span>
-                <h3 class="section-title">主催</h3>
-            </div>
-            <div class="organizer-profile text-center">
-                <h4 class="organizer-name">佐野 翔平 <span class="organizer-role">Shohei Sano</span></h4>
-                <p class="organizer-pos">伝統屋 暁／粋響株式会社 代表取締役</p>
-                <ul class="organizer-achievements">
-                    <li>火縄銃 競技 全日本優勝</li>
-                    <li>カンヌ・ミラノ出展ジュエリーデザイナー</li>
-                </ul>
-                <div class="organizer-link-wrapper">
-                    <a href="https://www.dentoyaakatsuki.com/" target="_blank" rel="noopener noreferrer"
-                        class="organizer-link">https://www.dentoyaakatsuki.com/</a>
-                </div>
+                <button class="submit-button"
+                    onclick="window.location.href='mailto:takashi.h.project@gmail.com?subject=株式会社Amorへのお問い合わせ'">通信を送る</button>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="site-footer">
-        <div class="container text-center">
-            <p class="footer-logo">MIDASHINAMI PROJECT 2026</p>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">Amor</div>
             <div class="footer-links">
-                <a href="privacy.html">プライバシーポリシー</a>
-                <a href="tokusho.html">特定商取引法に基づく表記</a>
+                <a href="law.html">特定商取引法に基づく表記</a>
+                <a href="privacy-policy.html">プライバシーポリシー</a>
             </div>
-            <p class="copyright">&copy; 2026 Midashinami Project. All Rights Reserved.</p>
+            <p class="copyright">&copy; 2026 Amor Co., Ltd. All Rights Reserved.</p>
         </div>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 
 </html>
